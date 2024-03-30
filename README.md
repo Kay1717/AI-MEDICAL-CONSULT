@@ -1,0 +1,2 @@
+# AI-MEDICAL-CONSULT
+medicals
