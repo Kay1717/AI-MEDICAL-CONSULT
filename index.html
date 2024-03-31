@@ -1,105 +1,169 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-<meta charset="UTF-8">
-<meta name="viewport" content="width=device-width, initial-scale=1.0">
-<link rel="stylesheet" href="index.css">
-<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css">
-<title>AI MEDICALS CONSULT</title>
-<script src="https://kit.fontawesome.com/edfb407c2c.js" crossorigin="anonymous"></script>
-</head>
-<body>
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="index.css" />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css"
+    />
+    <title>AI MEDICALS CONSULT</title>
+    <script
+      src="https://kit.fontawesome.com/edfb407c2c.js"
+      crossorigin="anonymous"
+    ></script>
+  </head>
+  <body>
     <nav class="navbar">
-        <div class="navbar__container">
-            <a href="#home" id="navbar__logo">AI MEDICAL</a>
-            <div class="navbar__toggle" id="mobile-menu">
-     <span class="bar"></span>
-                <span class="bar"></span>
-                <span class="bar"></span>
-            </div>
-            <ul class="navbar__menu" id="nav-menu">
-                <li class="navbar__item">
-                    <a href="#home" class="navbar__links" id="home-page">Home</a>
-                </li>
-                <li class="navbar__item">
-                    <a href="#about" class="navbar__links" id="about-page">About</a>
-                </li>
-                <li class="navbar__item">
-                    <a href="#services" class="navbar__links" id="services-page">Services</a>
-                </li>
-                <li class="navbar__btn">
-                   <a href=" tel:+233596513714" class="navbar__links" id="signup">Call Us</a>
-                </li>
-            </ul>
+      <div class="navbar__container">
+        <a href="#home" id="navbar__logo">AI MEDICAL</a>
+        <div class="navbar__toggle" id="mobile-menu">
+          <span class="bar"></span>
+          <span class="bar"></span>
+          <span class="bar"></span>
         </div>
+        <ul class="navbar__menu" id="nav-menu">
+          <li class="navbar__item">
+            <a href="#home" class="navbar__links" id="home-page">Home</a>
+          </li>
+          <li class="navbar__item">
+            <a href="#about" class="navbar__links" id="about-page">About</a>
+          </li>
+          <li class="navbar__item">
+            <a href="#services" class="navbar__links" id="services-page"
+              >Services</a
+            >
+          </li>
+          <li class="navbar__btn">
+            <a href=" tel:+233596513714" class="navbar__links" id="signup"
+              >Call Us</a
+            >
+          </li>
+        </ul>
+      </div>
     </nav>
- 
-
 
     <div class="hero" id="home">
-        <div class="hero__container">
-            <h1 class="hero__heading">Welcome to <span>AI MEDICAL Consult</span></h1>
-            <p class="hero__description"><i>Get Drugs The Easy Way</i></p>
-        </div>
+      <div class="hero__container">
+        <h1 class="hero__heading">
+          Welcome to <span>AI MEDICAL Consult</span>
+        </h1>
+        <p class="hero__description"><i>Get Drugs The Easy Way</i></p>
+      </div>
     </div>
 
-
-
-    <div class="search-box">
+    <div class="search-box-container">
+      <div class="search-box">
         <div class="row">
-            <input type="text" id="input-box" placeholder="Search available drugs here" autocomplete="off">
-            <button><i class="fa-solid fa-magnifying-glass"></i></button>
+          <input
+            type="text"
+            id="input-box"
+            placeholder="Search available drugs here"
+            autocomplete="off"
+          />
+          <button><i class="fa-solid fa-magnifying-glass"></i></button>
         </div>
-        <div class="result-box">
-            
+        <div class="result-box"></div>
+      </div>
+    </div>
+
+    <br />
+
+    <div class="forms-container">
+      <form
+        action="https://api.web3forms.com/submit"
+        method="POST"
+        class="forms-left"
+      >
+        <div class="forms-left-title">
+          <h2>FILL THE FORM</h2>
+          <hr />
         </div>
-
+        <input
+          type="hidden"
+          name="access_key"
+          value="97bdfe86-1790-40eb-ba6a-7bf97be22093"
+        />
+        <input
+          type="name"
+          name="name"
+          placeholder="ENTER DRUG NAME"
+          class="forms-inputs"
+          required
+        />
+        <input
+          type="number"
+          name="QUANTITY"
+          placeholder="ENTER ITEM QUANTITY"
+          class="forms-inputs"
+          required
+        />
+        <input
+          type="name"
+          name="name"
+          placeholder="ENTER YOUR NAME"
+          class="forms-inputs"
+          required
+        />
+        <input
+          type="tel"
+          name="TELEPHONE"
+          placeholder="ENTER YOUR TELEPHONE NUMBER"
+          class="forms-inputs"
+          required
+        />
+        <input
+          type="location"
+          name="LOCATION"
+          placeholder="ENTER YOUR LOCATION"
+          class="forms-inputs"
+          required
+        />
+        <textarea
+          name="Extra Notes"
+          placeholder="Any extra notes?"
+          class="forms-inputs"
+        ></textarea>
+        <button type="submit">SUBMIT</button>
+      </form>
+      <div class="forms-right">
+        <img src="images/heart.png" alt="" id="image" />
+      </div>
     </div>
-    <br>
+    <br />
 
-    <div class="forms-container"> 
-        <form action="https://api.web3forms.com/submit" method="POST" class="forms-left">
-           <div class="forms-left-title">
-               <h2>FILL THE FORM</h2>
-               <hr>
-           </div>
-           <input type="hidden" name="access_key" value="97bdfe86-1790-40eb-ba6a-7bf97be22093"> 
-           <input type="name" name="name" placeholder="ENTER DRUG NAME" class="forms-inputs" required>
-           <input type="number" name="QUANTITY" placeholder="ENTER ITEM QUANTITY" class="forms-inputs" required>
-           <input type="name" name="name" placeholder="ENTER YOUR NAME" class="forms-inputs" required>
-           <input type="tel" name="TELEPHONE" placeholder="ENTER YOUR TELEPHONE NUMBER" class="forms-inputs" required>
-           <input type="location" name="LOCATION" placeholder="ENTER YOUR LOCATION" class="forms-inputs" required>
-           <textarea name="Extra Notes" placeholder="Any extra notes?" class="forms-inputs" ></textarea>
-           <button type="submit">SUBMIT <img src="" class="submit" alt=""></button>
-        </form>
-       <div class="forms-right">
-         <img src="images/heart.png" alt="" id="image">
-       </div>
-    </div>
-    <br>
+    <div class="footer__container">
+      <div class="footer__link--items" id="link__items">
+        <h2>Social Media</h2>
+      </div>
 
-    <div class="footer__container" >
-                <div class="footer__link--items" id="link__items">
-                 <h2>Social Media</h2>
-                </div>
-    
-        
-     <section class="social__media">
+      <section class="social__media">
         <div class="social__media--wrap">
-            <p class="website__rights"> &copy; AI MEDICAL 2022. All rights reserved</p>
-            <div class="social__icons">
-                <a href="/" class="social__icon--link" target="_blank"><i class="fab fa-facebook"></i></a>
-                <a href="/" class="social__icon--link" target="_blank"><i class="fab fa-instagram"></i></a>
-                <a href="/" class="social__icon--link" target="_blank"><i class="fab fa-youtube"></i></a>
-                <a href="/" class="social__icon--link" target="_blank"><i class="fab fa-linkedin"></i></a>
-                <a href="/" class="social__icon--link" target="_blank"><i class="fab fa-twitter"></i></a>
-            </div>
+          <p class="website__rights">
+            &copy; AI MEDICAL 2022. All rights reserved
+          </p>
+          <div class="social__icons">
+            <a href="/" class="social__icon--link" target="_blank"
+              ><i class="fab fa-facebook"></i
+            ></a>
+            <a href="/" class="social__icon--link" target="_blank"
+              ><i class="fab fa-instagram"></i
+            ></a>
+            <a href="/" class="social__icon--link" target="_blank"
+              ><i class="fab fa-youtube"></i
+            ></a>
+            <a href="/" class="social__icon--link" target="_blank"
+              ><i class="fab fa-linkedin"></i
+            ></a>
+            <a href="/" class="social__icon--link" target="_blank"
+              ><i class="fab fa-twitter"></i
+            ></a>
+          </div>
         </div>
-     </section>
-
+      </section>
     </div>
 
-<script src="./autocomplete.js"></script>
-
-</body>
+    <script src="./autocomplete.js"></script>
+  </body>
 </html>
